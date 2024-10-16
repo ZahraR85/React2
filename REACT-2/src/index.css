@@ -25,3 +25,23 @@ ul{
   background-color: lightblue;
   border: none;
 }
+.card-item{
+  display: flex;
+  flex-direction: row;
+}
+.card{
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+.card-image{
+  width: 100%;
+}
+.card-body{
+  padding: 0 0.75rem;
+  border-radius: 5px;
+  border-top: none;
+}

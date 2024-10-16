@@ -3,6 +3,7 @@ import Hero from "./components/hero";
 import About from "./components/About";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
+import Student from "./components/Student";
 const evolutions = [
 {
   id : 1,
@@ -36,15 +37,20 @@ function App() {
       <main>
         <Hero/>
         <About/>
-        {evolutions.map((ev) => (
+        {evolutions && evolutions.length ? (
+          evolutions.map((ev) => (
           <Card key={ev.id} 
           /*name={ev.name} 
           sprite ={ev.sprite} 
           type={ev.type}*/
           {...ev}
           />
-        ))}
-      </main>
+          ))
+          ) : (
+            <p>No Data Available</p>
+          )}
+          <Student/>
+        </main>
       <Footer/>
     </>
   );

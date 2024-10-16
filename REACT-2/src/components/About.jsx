@@ -13,6 +13,8 @@ const About = () => {
       <h1>I&apos;m the about section!</h1>
       {/*<button className="btn">click me too!</button> */}
       <Button text="click me too"/>
+      <p>I render if the condition is true or truthy</p>
+      <p>I render if the condition is false or falsy</p>
     </section>
   );
 };
