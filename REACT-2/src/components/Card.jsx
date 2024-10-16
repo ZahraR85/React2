@@ -1,5 +1,5 @@
 const Card = ({name, sprite, type}) => {
-  return <div className="card-item">
+  return <div>
     <img src={sprite} alt={name} />
     <h2>{name}</h2>
     <p>type: {type}</p>

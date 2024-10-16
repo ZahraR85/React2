@@ -37,6 +37,7 @@ function App() {
       <main>
         <Hero/>
         <About/>
+        <div className="card-item">
         {evolutions && evolutions.length ? (
           evolutions.map((ev) => (
           <Card key={ev.id} 
@@ -49,7 +50,8 @@ function App() {
           ) : (
             <p>No Data Available</p>
           )}
-          <Student/>
+        </div>
+        <Student/>
         </main>
       <Footer/>
     </>

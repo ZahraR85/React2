@@ -27,7 +27,8 @@ ul{
 }
 .card-item{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .card{
   width: 16rem;
@@ -44,4 +45,9 @@ ul{
   padding: 0 0.75rem;
   border-radius: 5px;
   border-top: none;
+}
+.student-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
