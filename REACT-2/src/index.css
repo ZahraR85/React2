@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: lightgray;
+}
+ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#hero{
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.btn{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: lightblue;
+  border: none;
+}
