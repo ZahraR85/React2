@@ -6,9 +6,9 @@ const APP = () =>{
   const [count3, setCount3] = useState(0);
   return (
     <div>
-       <Counter count ={count1} setCount ={setCount1}/>
-       <Counter count ={count2} setCount ={setCount2}/>
-       <Counter count ={count3} setCount ={setCount3}/>
+       <Counter state ={count1} setState ={setCount1}/>
+       <Counter state ={count2} setState ={setCount2}/>
+       <Counter state ={count3} setState ={setCount3}/>
     </div>
   );
 };

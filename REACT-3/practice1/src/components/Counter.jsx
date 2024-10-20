@@ -1,9 +1,9 @@
-const Counter = ({count, setCount}) => {
+const Counter = ({state, setState}) => {
   return (
     <div style={{display: "flex", gap: "1rem", margin: "1rem"}}>
-    <button onClick={ () => setCount((prev)=> prev -1)}>-</button>
-    <span>{count}</span>
-    <button onClick={ () => setCount((prev)=> prev +1)}>+</button>
+    <button onClick={ () => setState((prev)=> prev -1)}>-</button>
+    <span>{state}</span>
+    <button onClick={ () => setState((prev)=> prev +1)}>+</button>
     </div>
   );
 };
