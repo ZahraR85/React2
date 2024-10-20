@@ -9,12 +9,22 @@ const Form = () => {
   });
 
   const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
+    setForm({...form,[e.target.name]: e.target.value,
     });
   };
-
+const handleSubmit = (e)=> {
+  e.preventDefault();
+  if (! form.firstName || ! form.lastName || !form.email || ! form.message){
+    alert("All fields required!");
+  }
+    console.log(form);
+   /* setForm = ({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: '',
+  }); */
+  };
   return (
     <>
       <label>
@@ -40,6 +50,7 @@ const Form = () => {
       <p>
         My Name is {form.firstName} {form.lastName} and my Email address is: {form.email} . I have this message:{form.message}
       </p>
+      <button style={{padding: "20px"}} onClick={handleSubmit}>Submit</button>
     </>
   );
 };
