@@ -37,7 +37,7 @@ export default App; */
 import { useEffect, useState } from 'react';
 
 const App = () => {
-  const [limit, setLimit] = useState(15);
+  const [limit] = useState(15);
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
